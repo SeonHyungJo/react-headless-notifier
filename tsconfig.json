@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "types",
+    "target": "esnext",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "strict": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "jsx": "react"
+  },
+  "exclude": [
+    "**/*.config.*",
+    "**/*.test.*",
+    "src/setupTests.js",
+    "stories"
+  ]
+}

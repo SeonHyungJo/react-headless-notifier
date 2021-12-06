@@ -1,0 +1,52 @@
+{
+  "name": "react-headless-notifier",
+  "version": "0.0.1",
+  "description": "react-headless-notifier",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "ts-types": "rimraf types && tsc --emitDeclarationOnly --outDir dist",
+    "build": "rimraf dist && yarn build:iife && yarn build:cjs && yarn build:esm && yarn ts-types",
+    "build:iife": "node build.iife.js",
+    "build:esm": "node build.esm.js",
+    "build:cjs": "node build.cjs.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeonHyungJo/react-headless-notifier.git"
+  },
+  "keywords": [
+    "react",
+    "headless",
+    "notifier"
+  ],
+  "author": "sNyung <seonhyung.jo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SeonHyungJo/react-headless-notifier/issues"
+  },
+  "homepage": "https://github.com/SeonHyungJo/react-headless-notifier#readme",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@stitches/react": "^1.2.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/react": "^17.0.37",
+    "esbuild": "^0.14.2",
+    "eslint": "^8.4.0",
+    "eslint-plugin-react": "^7.27.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.6",
+    "react": "^17.0.2"
+  }
+}
